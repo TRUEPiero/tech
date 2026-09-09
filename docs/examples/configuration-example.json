@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "technobit.configuration.v1",
+  "generatedAt": "2026-09-07T00:00:00.000Z",
+  "source": "technobit-web-calculator",
+  "configuration": {
+    "areaM2": 180,
+    "objectSystems": {
+      "ventilation": {
+        "present": true
+      }
+    },
+    "floors": [
+      {
+        "id": "floor-first",
+        "type": "first",
+        "name": "Первый этаж",
+        "order": 1,
+        "rooms": [
+          {
+            "id": "room-entrance",
+            "type": "Прихожая",
+            "name": "Прихожая № 1",
+            "order": 1,
+            "systems": {
+              "lighting": {
+                "relayAndSocketsGroups": 2,
+                "dimmingGroups": 0,
+                "daliGroups": 0,
+                "ledGroups": 1
+              },
+              "heating": {
+                "radiatorZones": 0,
+                "waterFloorCircuits": 1,
+                "electricFloorZones": 0,
+                "fanCoils": 0
+              },
+              "sensors": {
+                "co2": 0,
+                "motion": 1,
+                "wetZones": 0
+              },
+              "curtains": {
+                "drives": 0
+              },
+              "airConditioner": {
+                "present": false
+              },
+              "controls": {
+                "p4": true,
+                "p6": false,
+                "p8": false,
+                "scenarioSwitch": "none"
+              }
+            }
+          },
+          {
+            "id": "room-kitchen",
+            "type": "Кухня",
+            "name": "Кухня № 2",
+            "order": 2,
+            "systems": {
+              "lighting": {
+                "relayAndSocketsGroups": 3,
+                "dimmingGroups": 0,
+                "daliGroups": 0,
+                "ledGroups": 1
+              },
+              "heating": {
+                "radiatorZones": 0,
+                "waterFloorCircuits": 1,
+                "electricFloorZones": 0,
+                "fanCoils": 0
+              },
+              "sensors": {
+                "co2": 0,
+                "motion": 1,
+                "wetZones": 2
+              },
+              "curtains": {
+                "drives": 1
+              },
+              "airConditioner": {
+                "present": false
+              },
+              "controls": {
+                "p4": false,
+                "p6": false,
+                "p8": false,
+                "scenarioSwitch": "4"
+              }
+            }
+          },
+          {
+            "id": "room-living",
+            "type": "Гостиная",
+            "name": "Гостиная № 3",
+            "order": 3,
+            "systems": {
+              "lighting": {
+                "relayAndSocketsGroups": 3,
+                "dimmingGroups": 1,
+                "daliGroups": 0,
+                "ledGroups": 1
+              },
+              "heating": {
+                "radiatorZones": 0,
+                "waterFloorCircuits": 1,
+                "electricFloorZones": 0,
+                "fanCoils": 0
+              },
+              "sensors": {
+                "co2": 1,
+                "motion": 0,
+                "wetZones": 0
+              },
+              "curtains": {
+                "drives": 2
+              },
+              "airConditioner": {
+                "present": true
+              },
+              "controls": {
+                "p4": false,
+                "p6": true,
+                "p8": false,
+                "scenarioSwitch": "none"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "floor-second",
+        "type": "second",
+        "name": "Второй этаж",
+        "order": 2,
+        "rooms": [
+          {
+            "id": "room-bedroom-1",
+            "type": "Спальня",
+            "name": "Спальня № 1",
+            "order": 1,
+            "systems": {
+              "lighting": {
+                "relayAndSocketsGroups": 2,
+                "dimmingGroups": 1,
+                "daliGroups": 0,
+                "ledGroups": 1
+              },
+              "heating": {
+                "radiatorZones": 1,
+                "waterFloorCircuits": 0,
+                "electricFloorZones": 0,
+                "fanCoils": 0
+              },
+              "sensors": {
+                "co2": 1,
+                "motion": 0,
+                "wetZones": 0
+              },
+              "curtains": {
+                "drives": 1
+              },
+              "airConditioner": {
+                "present": true
+              },
+              "controls": {
+                "p4": false,
+                "p6": false,
+                "p8": false,
+                "scenarioSwitch": "6"
+              }
+            }
+          },
+          {
+            "id": "room-bedroom-2",
+            "type": "Спальня",
+            "name": "Спальня № 2",
+            "order": 2,
+            "systems": {
+              "lighting": {
+                "relayAndSocketsGroups": 2,
+                "dimmingGroups": 1,
+                "daliGroups": 0,
+                "ledGroups": 1
+              },
+              "heating": {
+                "radiatorZones": 1,
+                "waterFloorCircuits": 0,
+                "electricFloorZones": 0,
+                "fanCoils": 0
+              },
+              "sensors": {
+                "co2": 1,
+                "motion": 0,
+                "wetZones": 0
+              },
+              "curtains": {
+                "drives": 1
+              },
+              "airConditioner": {
+                "present": true
+              },
+              "controls": {
+                "p4": false,
+                "p6": false,
+                "p8": true,
+                "scenarioSwitch": "8"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "totals": {
+      "floors": 2,
+      "rooms": 5,
+      "relayAndSocketsGroups": 12,
+      "dimmingGroups": 3,
+      "daliGroups": 0,
+      "ledGroups": 5,
+      "radiatorZones": 2,
+      "waterFloorCircuits": 3,
+      "electricFloorZones": 0,
+      "fanCoils": 0,
+      "co2Sensors": 3,
+      "motionSensors": 2,
+      "wetZones": 2,
+      "curtainDrives": 5,
+      "airConditioners": 3,
+      "panelsP4": 1,
+      "panelsP6": 1,
+      "panelsP8": 1,
+      "scenarioSwitches4": 1,
+      "scenarioSwitches6": 1,
+      "scenarioSwitches8": 1
+    }
+  },
+  "estimate": {
+    "scope": "smart_home_equipment",
+    "status": "pending_rules_approval",
+    "currency": "RUB",
+    "priceBasis": "RRP",
+    "equipmentSeries": null,
+    "items": [],
+    "totalRub": null
+  },
+  "switchboardRequest": {
+    "scope": "electrical_and_automation_switchboard_only",
+    "status": "prepared_locally",
+    "contact": {
+      "channel": "email",
+      "value": "demo-client@example.com",
+      "consent": true
+    },
+    "delivery": {
+      "status": "not_sent"
+    }
+  }
+}

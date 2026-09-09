@@ -1,0 +1,1092 @@
+{
+  "packageFormatVersion": 1,
+  "title": "Технобит: сайт и калькулятор - пакет для программиста",
+  "createdAt": "2026-09-07T14:10:43.998648+00:00",
+  "sourceCommit": "586c57107ddbc1c993c3c578ed43dab6b167aae2",
+  "applicationBase": {
+    "publishedSiteVersion": 9,
+    "sourceCommit": "13ea8bff7287e31ef44d012c6fb89f3b61ee3dcf",
+    "note": "Пакет дополняет документацию и локальные вспомогательные файлы; приложение соответствует версии 9."
+  },
+  "roomDefaults": {
+    "count": 30,
+    "source": "seed",
+    "databaseOverridesObserved": 0,
+    "checkedOn": "2026-09-07"
+  },
+  "pricingStatus": "pending_rules_approval",
+  "integrationsStatus": "not_connected",
+  "fileCountExcludingManifest": 214,
+  "files": [
+    {
+      "path": ".env.example",
+      "sizeBytes": 101,
+      "sha256": "0948361f1435d2fa23041e4bd80ea9d021ba243a31f28a025037f3455f1a2513"
+    },
+    {
+      "path": ".gitignore",
+      "sizeBytes": 512,
+      "sha256": "42b7801ee5159c7b5a1ad13c23b13d850255e3b8ca25fc527b29d629a4aeb35e"
+    },
+    {
+      "path": ".npmrc",
+      "sizeBytes": 76,
+      "sha256": "494e64a8818b6158e89321250500ad5ad018e33ad5cfea06a1cacd2cf4da75fa"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "sizeBytes": 91,
+      "sha256": "d57899030237de351b9eb273b6689be68796f930d62fa231ba9cf3aa9f9531f1"
+    },
+    {
+      "path": "00_START_HERE.html",
+      "sizeBytes": 11359,
+      "sha256": "c119129d9410a80139ad565d876866f88baff3a4a9b98867ef1730f253a24d55"
+    },
+    {
+      "path": "00_START_HERE.md",
+      "sizeBytes": 8269,
+      "sha256": "b50ccc1a9a598d41389b44267eea79f2559e0070b3e9397feadbfc2017b3d567"
+    },
+    {
+      "path": "README.md",
+      "sizeBytes": 4408,
+      "sha256": "1aa2d0d479f7ed7ed5970bb6f66a6fecc942808b50743f67808b4eb5ad1d6c14"
+    },
+    {
+      "path": "app/api/calculator-defaults/route.ts",
+      "sizeBytes": 3222,
+      "sha256": "a5746448fccbd9c5153471b1f92e155e7dbd0e313fac1289b943cf595f69cf02"
+    },
+    {
+      "path": "app/api/leads/route.ts",
+      "sizeBytes": 1526,
+      "sha256": "605d98fd776b6cda086af33bc02fe609346e1da8bd053c9763c5e7475245ff3b"
+    },
+    {
+      "path": "app/calculator/page.tsx",
+      "sizeBytes": 1361,
+      "sha256": "ec1741b6edad8a727fd1bcf6a6527233818303f3cf74af936ae20e5ca22964cf"
+    },
+    {
+      "path": "app/calculator/presence-choice.tsx",
+      "sizeBytes": 850,
+      "sha256": "768029dbcac12345115cbe8408c556f70ce8c2a6d72390de9769a334a0c4800a"
+    },
+    {
+      "path": "app/calculator/room-control-fields.tsx",
+      "sizeBytes": 1847,
+      "sha256": "5d9fb43b1b8e43783938ec948fbc5f0bf25465bf3ee82a3e08977c379f51e05a"
+    },
+    {
+      "path": "app/calculator/settings/page.tsx",
+      "sizeBytes": 1608,
+      "sha256": "6891769082003599305c8ae1839f2b11dd1daafbe63503db7df98e1d5512fd2c"
+    },
+    {
+      "path": "app/calculator/settings/room-defaults-editor.tsx",
+      "sizeBytes": 9819,
+      "sha256": "ecb016b9e5b0d863ff5eb90f8132dd82a9584a5841c3e9b084f0dd27526a7e78"
+    },
+    {
+      "path": "app/calculator/smart-home-calculator.tsx",
+      "sizeBytes": 30112,
+      "sha256": "78a4335eece39629b9012d6fabfa93602c07ba64d22113127731a25aa6819435"
+    },
+    {
+      "path": "app/calculator/switchboard-request.tsx",
+      "sizeBytes": 8728,
+      "sha256": "461c913ace918157c591454821ca86cfea41e3b9f91864dc1d9709e3c5fe243d"
+    },
+    {
+      "path": "app/chatgpt-auth.ts",
+      "sizeBytes": 2404,
+      "sha256": "17a965f8948b21510cdf8ecbd70c5fdf58100e10970463f6a8fd2cc4795f8044"
+    },
+    {
+      "path": "app/components/lead-form.tsx",
+      "sizeBytes": 4652,
+      "sha256": "b5d46adcb13a3f9b93acddc87ce0199cb995a0a61011386619495b6149650d1d"
+    },
+    {
+      "path": "app/components/video-scenarios.tsx",
+      "sizeBytes": 5951,
+      "sha256": "9f1394c1278edc8b7f1ff84a2aa6524cf8ab3f57ea903180c2a17f3332522729"
+    },
+    {
+      "path": "app/globals.css",
+      "sizeBytes": 55655,
+      "sha256": "6282bdb89c593a2dd32d369e2112f47683fec1585450a6a9fe6f56efe23fa033"
+    },
+    {
+      "path": "app/layout.tsx",
+      "sizeBytes": 671,
+      "sha256": "453dd77653828dee28697a7a4e50ea4d6f3b84cc94b4aade3e4cebad11c7bff3"
+    },
+    {
+      "path": "app/lib/lead-schema.ts",
+      "sizeBytes": 835,
+      "sha256": "06b27ad08d87e08c53bf641a416edb9a4ed46ad9f593d2ae267d6b1b5c6cae69"
+    },
+    {
+      "path": "app/lib/responsive-image.ts",
+      "sizeBytes": 144,
+      "sha256": "bf2108591518b90569226a6a3f09c5b40af842c7584da540943d422eaf4aec49"
+    },
+    {
+      "path": "app/page.tsx",
+      "sizeBytes": 41389,
+      "sha256": "b3ff2daf2d0950819f3fac5263a0bc4544ae3358d22a5bf2ec1339b2b506134d"
+    },
+    {
+      "path": "build/sites-vite-plugin.ts",
+      "sizeBytes": 1254,
+      "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b"
+    },
+    {
+      "path": "components.json",
+      "sizeBytes": 420,
+      "sha256": "31f4ca67a4a62572571003d3d5aac85ee6fbfca67a192924bac6b168d95e98fd"
+    },
+    {
+      "path": "components/ui/accordion.tsx",
+      "sizeBytes": 2048,
+      "sha256": "a4f153089ba886dfcf73fac26b5c01ca933fa12fbe88df6fb723912bfffdfbb0"
+    },
+    {
+      "path": "components/ui/alert-dialog.tsx",
+      "sizeBytes": 5439,
+      "sha256": "9a8d950f2b9b4352d5ebb762fb44d5c28c2d353aa29712071973656a8736e311"
+    },
+    {
+      "path": "components/ui/alert.tsx",
+      "sizeBytes": 1614,
+      "sha256": "2cc59b5f7bda91c1670884b1bf46bfc8a2a6f226cef184f5762acc037188885b"
+    },
+    {
+      "path": "components/ui/aspect-ratio.tsx",
+      "sizeBytes": 274,
+      "sha256": "b1c157886236782cb92d8fbcd4749532aaf6d8aabefd6e157ca40358f902f407"
+    },
+    {
+      "path": "components/ui/attachment.tsx",
+      "sizeBytes": 6002,
+      "sha256": "ae8a25dd1a896d3964e3ef54d97e51221b418cde287dfd794428b89951c5c790"
+    },
+    {
+      "path": "components/ui/avatar.tsx",
+      "sizeBytes": 2916,
+      "sha256": "58a846bf1617b94b9681921db9b8461d0145f311424663d11678a06b6153cb34"
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "sizeBytes": 1776,
+      "sha256": "46a0de5224f6a5d5d63d45246534288518dce888f031064bff925bbc7fe6ad97"
+    },
+    {
+      "path": "components/ui/breadcrumb.tsx",
+      "sizeBytes": 2350,
+      "sha256": "d4c0831bba2212e778248f54a6ace6ef378df8bba4616d1abf27787a31eabae5"
+    },
+    {
+      "path": "components/ui/bubble.tsx",
+      "sizeBytes": 4699,
+      "sha256": "870cc0c5cfc8a515053f7e41e706a6bd017a909b45f1305fd3b164a52cc4483b"
+    },
+    {
+      "path": "components/ui/button-group.tsx",
+      "sizeBytes": 2202,
+      "sha256": "784c89d8ee683e1bc972ae69e6ea8225a7f63abe22aa1b5fc3423ae8a2a399c0"
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "sizeBytes": 2392,
+      "sha256": "cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4"
+    },
+    {
+      "path": "components/ui/calendar.tsx",
+      "sizeBytes": 7832,
+      "sha256": "3855fbe0d3f8ad3a4b93071f98b76a9f6782d46ec8b05f5d2ddbee1e4e39bc84"
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "sizeBytes": 1987,
+      "sha256": "c48dd3b96be90a7066f1aebf294f0af9d00ebcdc367d5d4aca55429ade570c1c"
+    },
+    {
+      "path": "components/ui/carousel.tsx",
+      "sizeBytes": 5556,
+      "sha256": "b7ea0dda3903d972c186f739e23da61f547bc83b5a0bf13b16856577846d5fc3"
+    },
+    {
+      "path": "components/ui/chart.tsx",
+      "sizeBytes": 10614,
+      "sha256": "45aa5ea4a386f4fb5b8869ff4bab3a08cf89255190ee322043baf84c3e950b6a"
+    },
+    {
+      "path": "components/ui/checkbox.tsx",
+      "sizeBytes": 1214,
+      "sha256": "b23ab9d4deeedf2ac8f512c368361ede681aa383437ef48563a6f9b7dbe95f27"
+    },
+    {
+      "path": "components/ui/collapsible.tsx",
+      "sizeBytes": 795,
+      "sha256": "c6598e5584f4258b5d9fefadbc5ad6a66888ad58729f4b634a0bb2d9c513188b"
+    },
+    {
+      "path": "components/ui/combobox.tsx",
+      "sizeBytes": 9158,
+      "sha256": "2d68e78b2dc7e38a085f222dede60a80b4f8229a6e91732c484605e204d46735"
+    },
+    {
+      "path": "components/ui/command.tsx",
+      "sizeBytes": 4818,
+      "sha256": "361193df1e3d64a9e9b5048f045264782fcb387aab3f00f2b805fdcbf538b16a"
+    },
+    {
+      "path": "components/ui/context-menu.tsx",
+      "sizeBytes": 8268,
+      "sha256": "2cf1fcf59df0649a3e2a126d1df2f639145f6b6bf5689ee54af1f40ab1245017"
+    },
+    {
+      "path": "components/ui/dialog.tsx",
+      "sizeBytes": 4303,
+      "sha256": "dce39c6adc47d997bd2567f8b7a72f466b0134715105cd42f9194007b8ecdb14"
+    },
+    {
+      "path": "components/ui/direction.tsx",
+      "sizeBytes": 506,
+      "sha256": "84ae2ad658207f0e0f367978e5508cd8027cd00c29c41d3d13db21a708c3d1e6"
+    },
+    {
+      "path": "components/ui/drawer.tsx",
+      "sizeBytes": 4255,
+      "sha256": "cb6eaf58eb0757ca91af284e5d925b89a42ad7eb19cb3f44c575a3487aa9350f"
+    },
+    {
+      "path": "components/ui/dropdown-menu.tsx",
+      "sizeBytes": 8418,
+      "sha256": "98f0dcdae38225b73734aceeb9213dd751fea2c72ea520df31003cd133deac8a"
+    },
+    {
+      "path": "components/ui/empty.tsx",
+      "sizeBytes": 2396,
+      "sha256": "ae95bdcf367a076ae02e7925f14522a148798f72d9651749c6d55497dba584c0"
+    },
+    {
+      "path": "components/ui/field.tsx",
+      "sizeBytes": 6159,
+      "sha256": "ba67d76f017ac059fc86cf8c344e0b2991c4322d3619e125498c19b87f6eefbd"
+    },
+    {
+      "path": "components/ui/form.tsx",
+      "sizeBytes": 3757,
+      "sha256": "315b46bb75ab7d1c6061b5d750aa4bedf6e7a455e15e2d7f9182f053d5972b1e"
+    },
+    {
+      "path": "components/ui/hover-card.tsx",
+      "sizeBytes": 1526,
+      "sha256": "f5d8df42c59370ec14d61bcc54f7d68e9bb7dfa0d6a872b2f7cffc2aafbf23b8"
+    },
+    {
+      "path": "components/ui/input-group.tsx",
+      "sizeBytes": 5065,
+      "sha256": "6afbd58fea4c438e6252dc4568bddc122e84ababead4ad5cee50ace01100c9a0"
+    },
+    {
+      "path": "components/ui/input-otp.tsx",
+      "sizeBytes": 2254,
+      "sha256": "161946daa89f0eda2575b9271c0494e35807c4ffb55598a49f67160c17fec299"
+    },
+    {
+      "path": "components/ui/input.tsx",
+      "sizeBytes": 962,
+      "sha256": "8c4612a7c41319ac5049daa3b34b080f9784b6245c17780eb87c127e58e473db"
+    },
+    {
+      "path": "components/ui/item.tsx",
+      "sizeBytes": 4486,
+      "sha256": "6e2144d6d87142dbbe56d568810bf546318c8aa661447ebb0d76ebbf382cb45f"
+    },
+    {
+      "path": "components/ui/kbd.tsx",
+      "sizeBytes": 862,
+      "sha256": "6088c3a5432338b1719c17e9b5d0e1fa74fd1f66060f248fc88909d33a82cd13"
+    },
+    {
+      "path": "components/ui/label.tsx",
+      "sizeBytes": 606,
+      "sha256": "a476e41f08b9de5bd447de66a33d8bc2ad18f2fa6b96c064778bab4b6f439f4c"
+    },
+    {
+      "path": "components/ui/marker.tsx",
+      "sizeBytes": 1864,
+      "sha256": "3d798763f094b2bb5e7ade2d5cd1b9bab498bc8ca7fd4cfaf4e5835bdedc34a0"
+    },
+    {
+      "path": "components/ui/menubar.tsx",
+      "sizeBytes": 8389,
+      "sha256": "9243af8afcea03703398ccd1c2a8c0a87ad6cbaf2bd272fb609f5b79fe46aebb"
+    },
+    {
+      "path": "components/ui/message-scroller.tsx",
+      "sizeBytes": 3992,
+      "sha256": "bb7660a248e4e9589c3816c7c1c199ea1381a70d2c8476ae895b567a7a4d86cf"
+    },
+    {
+      "path": "components/ui/message.tsx",
+      "sizeBytes": 2232,
+      "sha256": "9d2952bf3b641081f09aa2739535e6bbd1be0a4946789752a2c20d8aaef43185"
+    },
+    {
+      "path": "components/ui/native-select.tsx",
+      "sizeBytes": 1995,
+      "sha256": "007516b111fca8c98a6c40c94ab91bb68cc5b52afce1ed1f5e510c3d86e7347c"
+    },
+    {
+      "path": "components/ui/navigation-menu.tsx",
+      "sizeBytes": 6658,
+      "sha256": "889d358a77de88e9cb6f39ea4895ea4c76eaf01d731b74e44f1c41e97a78a044"
+    },
+    {
+      "path": "components/ui/pagination.tsx",
+      "sizeBytes": 2717,
+      "sha256": "374ad135c3d4ff3ec080a0009cd9745cdd0e12faa89d2b0e86074f11e5127fd1"
+    },
+    {
+      "path": "components/ui/popover.tsx",
+      "sizeBytes": 2357,
+      "sha256": "31c350309ff5d3034e6ecf1b0eda75ba8855bdbf987fc7ad6d71f0ef07c5a447"
+    },
+    {
+      "path": "components/ui/progress.tsx",
+      "sizeBytes": 755,
+      "sha256": "c8c26e8f5f041c3cdf4915347dc1d9c022f9448f149990fadcaf303e952fa57d"
+    },
+    {
+      "path": "components/ui/radio-group.tsx",
+      "sizeBytes": 1460,
+      "sha256": "fe5ce39636d0818c2bf9c4eebddff893d1225fa2c81b5fa4bb8cbb39a8c913ce"
+    },
+    {
+      "path": "components/ui/resizable.tsx",
+      "sizeBytes": 1815,
+      "sha256": "bc63958467aa00557c551bb0d96a5ae4c965c1e1ba2380e595949d933b132f7c"
+    },
+    {
+      "path": "components/ui/scroll-area.tsx",
+      "sizeBytes": 1639,
+      "sha256": "8bd9d986b2844c9a87de825c6de4787b6739b36c3dc9a05ccf3eb107160e4043"
+    },
+    {
+      "path": "components/ui/select.tsx",
+      "sizeBytes": 6353,
+      "sha256": "0b796a108a4eb5ba52d9ad938b7aea36dc56ae66c703a6d0a23dbc24f96daff3"
+    },
+    {
+      "path": "components/ui/separator.tsx",
+      "sizeBytes": 694,
+      "sha256": "6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e"
+    },
+    {
+      "path": "components/ui/sheet.tsx",
+      "sizeBytes": 4188,
+      "sha256": "63863cf2df8f8973e52b3459ac9bdbf81be1262dbc70eb53d5271ffb03488e16"
+    },
+    {
+      "path": "components/ui/sidebar.tsx",
+      "sizeBytes": 21526,
+      "sha256": "4a8d73e7730a2b1fcecfca31299ed26db65c2307b84197a59c6ec7c01c7ad28e"
+    },
+    {
+      "path": "components/ui/skeleton.tsx",
+      "sizeBytes": 276,
+      "sha256": "ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239"
+    },
+    {
+      "path": "components/ui/slider.tsx",
+      "sizeBytes": 1991,
+      "sha256": "0e37484f4b416e79ac18c655cac961aefacf6e67085cfc2b320ea8af545635a3"
+    },
+    {
+      "path": "components/ui/sonner.tsx",
+      "sizeBytes": 1034,
+      "sha256": "13ccc9b0fe4248e622f83a1d3b2f0566b72b5e04162d7d0c8db8945ecc71b55f"
+    },
+    {
+      "path": "components/ui/spinner.tsx",
+      "sizeBytes": 331,
+      "sha256": "3e6e6e8d37fb4069f8e43e55318f8db06fbc36e6c8be0096da3c9337c1c798b9"
+    },
+    {
+      "path": "components/ui/switch.tsx",
+      "sizeBytes": 1408,
+      "sha256": "386d4d4deb39f34126f9700fe9bf5393d238485dd94018bba9d154dda84c62ae"
+    },
+    {
+      "path": "components/ui/table.tsx",
+      "sizeBytes": 2478,
+      "sha256": "20e5a7f224959c6b75802995706a97e9da171f693d4b6b1b436388fcd9df96f3"
+    },
+    {
+      "path": "components/ui/tabs.tsx",
+      "sizeBytes": 3782,
+      "sha256": "865d0194331b9b2be36723fa79d3575dc83078b4cb941cafee87cb72fc2cff46"
+    },
+    {
+      "path": "components/ui/textarea.tsx",
+      "sizeBytes": 759,
+      "sha256": "253cdeb487c73beaaccdf47fc163e36e7d5b7ae6ddf09a4f64998a109a112979"
+    },
+    {
+      "path": "components/ui/toggle-group.tsx",
+      "sizeBytes": 2308,
+      "sha256": "69f643e889e933f05c1439084480d8646f66a161c7d1cf0730ee926382ade35e"
+    },
+    {
+      "path": "components/ui/toggle.tsx",
+      "sizeBytes": 1565,
+      "sha256": "ba4d0b0a2b2fee75dc36dfc19e32082e721024b919050c97fd5dc70faa924e16"
+    },
+    {
+      "path": "components/ui/tooltip.tsx",
+      "sizeBytes": 1830,
+      "sha256": "a0784eb77831a799fad7991df4f1b666f876201565a80175e1aa68733574a2e4"
+    },
+    {
+      "path": "db/index.ts",
+      "sizeBytes": 542,
+      "sha256": "e4a602f82b533a6fa228e66fc48dcc615a2ef52efa823e92941b56e2797abfff"
+    },
+    {
+      "path": "db/schema.ts",
+      "sizeBytes": 344,
+      "sha256": "f195e2230167d4fcfee5d77ea98b8520df4affbaaa29e97a6d7df538876a3eb1"
+    },
+    {
+      "path": "docs/00_START_HERE.html",
+      "sizeBytes": 11319,
+      "sha256": "897cd0aa2ebd32d1f9a61be812cd918482f14a06e9f1007d2c0f66f775210a08"
+    },
+    {
+      "path": "docs/00_START_HERE.md",
+      "sizeBytes": 8229,
+      "sha256": "e86dbc168215cccc3355d15836d0bae189de2d3b8e85a30e2cde588b43ec5a22"
+    },
+    {
+      "path": "docs/ACCEPTANCE.html",
+      "sizeBytes": 16765,
+      "sha256": "69de175ab0e9f8b9be9823e94ae97280b2811f046e5f0dead0eebdd4ca377f1a"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "sizeBytes": 13225,
+      "sha256": "5e10de84c8fad3dace33ed1fa8d30d8356ae0725a189e232b7145ad7cb875ee0"
+    },
+    {
+      "path": "docs/CALCULATION_PROPOSAL.html",
+      "sizeBytes": 25525,
+      "sha256": "3e85ff51a03dfea73d282f5554b81cd5d1896971b418bdd8150361b16c404eba"
+    },
+    {
+      "path": "docs/CALCULATION_PROPOSAL.md",
+      "sizeBytes": 21807,
+      "sha256": "576cc464b577b071a928324c03d46d9b76b9d2fd6a0fa461586d97c1386d4e8d"
+    },
+    {
+      "path": "docs/CONFIGURATION_JSON.html",
+      "sizeBytes": 13254,
+      "sha256": "dbdfd29d191b6b1576dc7b7d191bf49eee29cf7c369d84de31e4f00bd8fd5828"
+    },
+    {
+      "path": "docs/CONFIGURATION_JSON.md",
+      "sizeBytes": 10280,
+      "sha256": "1dbff1c911a0e0032806d03b02309511e607b3959d07872f0b0ae5f7fa07a39c"
+    },
+    {
+      "path": "docs/PROGRAMMER_HANDOFF.html",
+      "sizeBytes": 32871,
+      "sha256": "dd78867cab4bc90b0ee280b53b184953594e1175af30838da3bc565f83bc66b1"
+    },
+    {
+      "path": "docs/PROGRAMMER_HANDOFF.md",
+      "sizeBytes": 29207,
+      "sha256": "4f1d29e67a651f1556477a5d8496755ea8b7dda7f8337bec772f8fe20a796979"
+    },
+    {
+      "path": "docs/ROOM_DEFAULTS.html",
+      "sizeBytes": 18590,
+      "sha256": "7cc307e84aac10fbe2710043b32525b31a7b5b1d03229e230d9696f5e59bd10b"
+    },
+    {
+      "path": "docs/ROOM_DEFAULTS.md",
+      "sizeBytes": 11005,
+      "sha256": "2da1029331a14ede54cf9fdb6db21686947d4493a881fb2ba152a3b6c5a69192"
+    },
+    {
+      "path": "docs/examples/configuration-draft.json",
+      "sizeBytes": 6771,
+      "sha256": "53a7db7dcf4029e5a84703363f049f4488e07c1ff29f8367ebdb6a9fd061e8c9"
+    },
+    {
+      "path": "docs/examples/configuration-example.json",
+      "sizeBytes": 6867,
+      "sha256": "1c394c1db66af5119ee7a996e1f74555d7b2e93ec5628b169d7dd0046a4a52c9"
+    },
+    {
+      "path": "docs/examples/room-defaults.json",
+      "sizeBytes": 13426,
+      "sha256": "1dae857b78ab7db2944a0119985796444953bc0816467d806cd63462637f2b34"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "sizeBytes": 148,
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b"
+    },
+    {
+      "path": "drizzle/0000_watery_agent_brand.sql",
+      "sizeBytes": 186,
+      "sha256": "b2f4d34b37c22f12f709a57251395180d6f1e2c8dec1cb10fb00b7ce888b4109"
+    },
+    {
+      "path": "drizzle/meta/0000_snapshot.json",
+      "sizeBytes": 1439,
+      "sha256": "8e1d98eaba963a02c50e1bf86d85c5d9f3921f8bbd8ce51f5ee15d8d99e3ed38"
+    },
+    {
+      "path": "drizzle/meta/_journal.json",
+      "sizeBytes": 208,
+      "sha256": "0585de5f97976b47921b1e8cfa1545f93cd03f21de44eeb3af080b18cc9c4e15"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sizeBytes": 846,
+      "sha256": "f22a254df7d934bbf9be499d3c969a13abb7f7f64c03f5967d0095cad81dfe06"
+    },
+    {
+      "path": "examples/d1/app/api/notes/route.ts",
+      "sizeBytes": 1700,
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909"
+    },
+    {
+      "path": "examples/d1/db/schema.ts",
+      "sizeBytes": 370,
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454"
+    },
+    {
+      "path": "hooks/use-mobile.ts",
+      "sizeBytes": 565,
+      "sha256": "ad0936f84f1df79d3697bfbff9c18f8ad58431c1cbaf2359c6a853b0fcc9f28b"
+    },
+    {
+      "path": "lib/calculator-controls.ts",
+      "sizeBytes": 1270,
+      "sha256": "f4fd3f4005e3c27503eec9c36b06f0fcd88bcca8851c542522413a5f62371260"
+    },
+    {
+      "path": "lib/calculator-defaults.ts",
+      "sizeBytes": 4403,
+      "sha256": "215abb29268c67699f4997b29fec6ae4ccfdc80ba83f71c5b54e2d0b05cc434b"
+    },
+    {
+      "path": "lib/calculator-room-presets.ts",
+      "sizeBytes": 13615,
+      "sha256": "5cee2ea36a4137bd21ac0827c0808f00a99a334ec7d1e457187f9159f291aff8"
+    },
+    {
+      "path": "lib/calculator-settings-server.ts",
+      "sizeBytes": 708,
+      "sha256": "f04630a472ebaf70e79ec48139ef74a0cb82c89ea848a86015a0eb32862248cf"
+    },
+    {
+      "path": "lib/calculator-settings-store.ts",
+      "sizeBytes": 1884,
+      "sha256": "2eadce017b0db6fcb23ca05b2c20827083e82aac4af61103bc160ac64b31954e"
+    },
+    {
+      "path": "lib/project-configuration.ts",
+      "sizeBytes": 6544,
+      "sha256": "7c576cba488276a43f6228ac71ea99043310d9e72d0718c2fa44abf772ed7359"
+    },
+    {
+      "path": "lib/utils.ts",
+      "sizeBytes": 177,
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68"
+    },
+    {
+      "path": "next.config.ts",
+      "sizeBytes": 133,
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc"
+    },
+    {
+      "path": "package-lock.json",
+      "sizeBytes": 498254,
+      "sha256": "920d21ca287ce8911f9fb9089c2a388d0fcd45ca6a397af13f33787d5c6800a5"
+    },
+    {
+      "path": "package.json",
+      "sizeBytes": 1911,
+      "sha256": "a40d92ccb4cfbe9e74755b4f6e95b842e7f5771aceab722739b6b9dcf4d5d929"
+    },
+    {
+      "path": "postcss.config.mjs",
+      "sizeBytes": 94,
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "path": "public/favicon.svg",
+      "sizeBytes": 712,
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    },
+    {
+      "path": "public/file.svg",
+      "sizeBytes": 392,
+      "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307"
+    },
+    {
+      "path": "public/globe.svg",
+      "sizeBytes": 1036,
+      "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartment-480.webp",
+      "sizeBytes": 2496,
+      "sha256": "021005ed89ff3ea2e39bf49201dd5c4bad8690a8b6a18de6b2f62fff8dbdad2a"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartment-960.webp",
+      "sizeBytes": 5438,
+      "sha256": "4b27dad1d7189575cd85fb730009bd80b82657a3e12264468ddc488af60e0d22"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartment.png",
+      "sizeBytes": 106415,
+      "sha256": "077e9d0c81b09774c0863b5475f5ce8b7f30aaca67ba4a9c26519d05dba4addf"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartments-480.webp",
+      "sizeBytes": 3520,
+      "sha256": "573770025c71f4130f8a15a333e067a85cf5c1116b488cf09b761ab7e4354e7e"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartments-960.webp",
+      "sizeBytes": 7432,
+      "sha256": "852bab7f24337796f7fc1869494f07bdfc43a9171da16f87c5e58ba9d6a3ee13"
+    },
+    {
+      "path": "public/images/placeholders/audience-apartments.png",
+      "sizeBytes": 130919,
+      "sha256": "5844c1faeb839754fb9820c93d8ea9223b1ae51141665f29f97fb01311f9ac78"
+    },
+    {
+      "path": "public/images/placeholders/audience-country-house-480.webp",
+      "sizeBytes": 6576,
+      "sha256": "0c753e0e568ad100b51829cf8621d627965db39376b6fd7e096f929f1787b196"
+    },
+    {
+      "path": "public/images/placeholders/audience-country-house-960.webp",
+      "sizeBytes": 13388,
+      "sha256": "a4ccd0d6eba05f7b5e53341f5b17ddcd26da197448e7fd9e3a3df3e747fe1df2"
+    },
+    {
+      "path": "public/images/placeholders/audience-country-house.png",
+      "sizeBytes": 246391,
+      "sha256": "2a2517e571826eba911c643db22940734d45f6747a44e732c6ae1c7881cb153e"
+    },
+    {
+      "path": "public/images/placeholders/audience-villa-480.webp",
+      "sizeBytes": 8436,
+      "sha256": "0014631c809cb152301c20385980f08d28f6b2b0acb37cca1c7378e472a17519"
+    },
+    {
+      "path": "public/images/placeholders/audience-villa-960.webp",
+      "sizeBytes": 17102,
+      "sha256": "6f0e7aba47a2a407e92754bfc23f7bf4fa4c9b5a38e3a3c1c3f78638e6cfc3fa"
+    },
+    {
+      "path": "public/images/placeholders/audience-villa.png",
+      "sizeBytes": 278826,
+      "sha256": "882806e8f01b866ea52c28493608c9cf1da3a5bd394f5a90b87cd9617ca54759"
+    },
+    {
+      "path": "public/images/placeholders/comfort-switch-480.webp",
+      "sizeBytes": 2026,
+      "sha256": "b81725fd2ea0d3da759e3d228094cfc6f4ba1fae0499cb6f4104d107c609f27a"
+    },
+    {
+      "path": "public/images/placeholders/comfort-switch-960.webp",
+      "sizeBytes": 2026,
+      "sha256": "b81725fd2ea0d3da759e3d228094cfc6f4ba1fae0499cb6f4104d107c609f27a"
+    },
+    {
+      "path": "public/images/placeholders/comfort-switch.png",
+      "sizeBytes": 31083,
+      "sha256": "9c9082dae4ad05b723d3b668f253340718cad70d8d4f885c0f242d652c759c77"
+    },
+    {
+      "path": "public/images/placeholders/contact-consultant-480.webp",
+      "sizeBytes": 4782,
+      "sha256": "2a032c48235d0b47bece164ebdbc4e4c370def18e6a3e68767f5aaf51933a886"
+    },
+    {
+      "path": "public/images/placeholders/contact-consultant-960.webp",
+      "sizeBytes": 11048,
+      "sha256": "3e56f554bba95367f08d77e1a8b55dfc2bc3b2a9e8a2556de18851c7803ba742"
+    },
+    {
+      "path": "public/images/placeholders/contact-consultant.png",
+      "sizeBytes": 262780,
+      "sha256": "5717a865fe02118ed70c17517de3d54cdf6776d02d57996a0ed9aeeb0a80e666"
+    },
+    {
+      "path": "public/images/placeholders/hero-living-room-480.webp",
+      "sizeBytes": 2226,
+      "sha256": "3ad6120c47708050ea621283e6c4018ecd24bbac5a71f8362128645452cd58f6"
+    },
+    {
+      "path": "public/images/placeholders/hero-living-room-960.webp",
+      "sizeBytes": 2226,
+      "sha256": "3ad6120c47708050ea621283e6c4018ecd24bbac5a71f8362128645452cd58f6"
+    },
+    {
+      "path": "public/images/placeholders/hero-living-room.png",
+      "sizeBytes": 25825,
+      "sha256": "53a05d879d332b007de2d7318013b2ae847cc741a5ac05129db7a3ffba359868"
+    },
+    {
+      "path": "public/images/placeholders/partner-designer-480.webp",
+      "sizeBytes": 6902,
+      "sha256": "5291533d9ce2087ca59044f8818a7bb1ede1910064e5a1962dea9796c3d9792f"
+    },
+    {
+      "path": "public/images/placeholders/partner-designer-960.webp",
+      "sizeBytes": 11518,
+      "sha256": "76402a31b52d1884a96b48d965bf30b09a93284d44d810da4df8acecb4b6ab2f"
+    },
+    {
+      "path": "public/images/placeholders/partner-designer.png",
+      "sizeBytes": 282666,
+      "sha256": "b30652a24fecb0716e61b1c09176a275dcbf676192afed44bb70631be6b81d76"
+    },
+    {
+      "path": "public/images/placeholders/partner-developer-480.webp",
+      "sizeBytes": 7988,
+      "sha256": "3d49954c20280095bd0ab58a749f0cd5f0107e70bf502bd02367e771a213c297"
+    },
+    {
+      "path": "public/images/placeholders/partner-developer-960.webp",
+      "sizeBytes": 13100,
+      "sha256": "5aade023989204488e9776a4cd446209deeb3d0ac4b3e1f229b95cdaa66fe05a"
+    },
+    {
+      "path": "public/images/placeholders/partner-developer.png",
+      "sizeBytes": 308097,
+      "sha256": "205abb3e650ed148d32c5af4fabb8946ef6065ae7bd2d0c2bc0739da92e8deb9"
+    },
+    {
+      "path": "public/images/placeholders/partner-electrician-480.webp",
+      "sizeBytes": 6500,
+      "sha256": "909e241fcf5fbb6a680634f5c996fe04ccf5fbd9f4a1f5acc904d6fd27c69a7e"
+    },
+    {
+      "path": "public/images/placeholders/partner-electrician-960.webp",
+      "sizeBytes": 11056,
+      "sha256": "12f2913675d17fe294eb14fb30edfb0d87b229011684413392ce963e70437a99"
+    },
+    {
+      "path": "public/images/placeholders/partner-electrician.png",
+      "sizeBytes": 251128,
+      "sha256": "4205123db142f376c3b7a3a9c3a739326540555a989c5786c239c8733fe56fc4"
+    },
+    {
+      "path": "public/images/placeholders/partner-realtor-480.webp",
+      "sizeBytes": 6968,
+      "sha256": "08944a59a6073abf595d1fb08a48e9ffe25b0cc049eda7c348931f5bb2e330c6"
+    },
+    {
+      "path": "public/images/placeholders/partner-realtor-960.webp",
+      "sizeBytes": 11784,
+      "sha256": "caddccaae8193bf25d2e47128cd2ea1f5b39df3c1fa8a38ba94261405855bd14"
+    },
+    {
+      "path": "public/images/placeholders/partner-realtor.png",
+      "sizeBytes": 307506,
+      "sha256": "72984a31627e285a7e34b41ade8fed4111ab62d06ebb25610064ab5f897714a3"
+    },
+    {
+      "path": "public/images/placeholders/planning-catalog-480.webp",
+      "sizeBytes": 13832,
+      "sha256": "07601ac56a0d416494df427752d952f7aac805f3059660bd225746a9875878ff"
+    },
+    {
+      "path": "public/images/placeholders/planning-catalog-960.webp",
+      "sizeBytes": 30362,
+      "sha256": "32fbda7041c0d073473dbb2ceee3c35932dfc63423a5095c83224ff8d338a199"
+    },
+    {
+      "path": "public/images/placeholders/planning-catalog.png",
+      "sizeBytes": 765366,
+      "sha256": "3134fd2ebfec52fe7c621efc451c5e0709c486d91864761b7a2c69dc07dcbc9c"
+    },
+    {
+      "path": "public/images/placeholders/process-consultation-480.webp",
+      "sizeBytes": 13022,
+      "sha256": "784f152d7c7e348e2c0efdab2cfa33c573cfad370c72548f540868307efc47f9"
+    },
+    {
+      "path": "public/images/placeholders/process-consultation-960.webp",
+      "sizeBytes": 27866,
+      "sha256": "165d891bc211b8d6929ddb5ab1fbbcfaa6a57304fd4e8231700bd52ec3d2dcb8"
+    },
+    {
+      "path": "public/images/placeholders/process-consultation.png",
+      "sizeBytes": 622198,
+      "sha256": "e59fa5aeb95f7fd242d58587c6c18f5afade3ba51a111d70d816e9bfb8facbbf"
+    },
+    {
+      "path": "public/images/placeholders/project-guest-house-480.webp",
+      "sizeBytes": 3804,
+      "sha256": "36de5b231211ab55b3e1dd6cf818e10b91f723ef5723046d455efb8229f6875a"
+    },
+    {
+      "path": "public/images/placeholders/project-guest-house-960.webp",
+      "sizeBytes": 7910,
+      "sha256": "c29c79d781baab8b945943ab05b65f6bc02a3e58a0c60920f01184d93bb2e493"
+    },
+    {
+      "path": "public/images/placeholders/project-guest-house.png",
+      "sizeBytes": 172013,
+      "sha256": "e4def4d68f7ce5533b6a1f21b7ad25961f4ea32c9dee048045364ac04976d348"
+    },
+    {
+      "path": "public/images/placeholders/project-lucky-480.webp",
+      "sizeBytes": 7160,
+      "sha256": "0de984a1619d2a36f98a1f05b9e316e172facfe58c8300e596121c91d8d953e6"
+    },
+    {
+      "path": "public/images/placeholders/project-lucky-960.webp",
+      "sizeBytes": 14644,
+      "sha256": "0329c6e053c8747db0a0e7c09ce53dcb68027df887623e3a757d721c4beddfb4"
+    },
+    {
+      "path": "public/images/placeholders/project-lucky.png",
+      "sizeBytes": 251597,
+      "sha256": "de0c2dcab7fa24b872566bc413f83bd6d66cee0ecdd2e4a6e9a2505d7f19dfac"
+    },
+    {
+      "path": "public/images/placeholders/project-studio-480.webp",
+      "sizeBytes": 2116,
+      "sha256": "8bce623e9f4446bdee79adfd5e66ef27baba08ca0348556826220de944de5ed4"
+    },
+    {
+      "path": "public/images/placeholders/project-studio-960.webp",
+      "sizeBytes": 4770,
+      "sha256": "306de3d3d46520357f58582e4213809e22052cdd9ac4059a6075f00fcedebbc3"
+    },
+    {
+      "path": "public/images/placeholders/project-studio.png",
+      "sizeBytes": 132216,
+      "sha256": "e019786b702989325e46842cd30e12a00cdffaf2c83394fa1fa4565a8b2b21b7"
+    },
+    {
+      "path": "public/images/placeholders/project-superman-480.webp",
+      "sizeBytes": 5262,
+      "sha256": "77d7c5db1be6c9cbd7da49f6c533fa48c20e98dbc2dc751a27f50febccb76bd5"
+    },
+    {
+      "path": "public/images/placeholders/project-superman-960.webp",
+      "sizeBytes": 11010,
+      "sha256": "a0a10c432e9cfaa9c0cba985e2d27e2278f38ae026567f9f86fd6513a5de22f2"
+    },
+    {
+      "path": "public/images/placeholders/project-superman.png",
+      "sizeBytes": 213609,
+      "sha256": "a3f8fcd45a157de0bbd168ed8fe659886c7970fa4b3e8d5adb516cef1a2e35a9"
+    },
+    {
+      "path": "public/images/placeholders/showroom-480.webp",
+      "sizeBytes": 12598,
+      "sha256": "8b1246a356850b822a85bed4220ac39de090aca9042df7df68ae52acedcecd4d"
+    },
+    {
+      "path": "public/images/placeholders/showroom-960.webp",
+      "sizeBytes": 26936,
+      "sha256": "b00198341d96a9f7c19e0f92eb47b496a20e7c35edb12ca17e9f762cd2f5b30b"
+    },
+    {
+      "path": "public/images/placeholders/showroom-clean-480.webp",
+      "sizeBytes": 12568,
+      "sha256": "d2d5c6472c9d8295277e7c1c2943494c9c7885cb88ac5950bc0f808ea500cbf7"
+    },
+    {
+      "path": "public/images/placeholders/showroom-clean-960.webp",
+      "sizeBytes": 26842,
+      "sha256": "aa1053456d4796304399d96bb7b443a8a52ac185df63fe5e0866efa0d0244f81"
+    },
+    {
+      "path": "public/images/placeholders/showroom-clean.png",
+      "sizeBytes": 606232,
+      "sha256": "8c4a5063a2102e68bcaa196d74201b8140cc2825ad57697eaf09736085bcf266"
+    },
+    {
+      "path": "public/images/placeholders/showroom.png",
+      "sizeBytes": 609128,
+      "sha256": "eccba48ba18535174be4e562df1a9b268d4b84a2ee057fe17d8d5f3b47867eff"
+    },
+    {
+      "path": "public/images/placeholders/video-care-480.webp",
+      "sizeBytes": 1372,
+      "sha256": "bb799952000f363ca619540b73d0638987e6f16b5d0e12f176d46ec3eafde349"
+    },
+    {
+      "path": "public/images/placeholders/video-care-960.webp",
+      "sizeBytes": 1372,
+      "sha256": "bb799952000f363ca619540b73d0638987e6f16b5d0e12f176d46ec3eafde349"
+    },
+    {
+      "path": "public/images/placeholders/video-care.png",
+      "sizeBytes": 11985,
+      "sha256": "deda39db1257a606d1249c50d4d67378a72b980660751dc0cbb8ead7a8473149"
+    },
+    {
+      "path": "public/images/placeholders/video-leaks-480.webp",
+      "sizeBytes": 1194,
+      "sha256": "5dd6d8580a770fb764d32e3ac401609e3ea3f8241b47e38339945778886b6984"
+    },
+    {
+      "path": "public/images/placeholders/video-leaks-960.webp",
+      "sizeBytes": 1194,
+      "sha256": "5dd6d8580a770fb764d32e3ac401609e3ea3f8241b47e38339945778886b6984"
+    },
+    {
+      "path": "public/images/placeholders/video-leaks.png",
+      "sizeBytes": 11936,
+      "sha256": "78c73526ae77429775a3212af255fe15fffaf90addbbaa070a2a159178523539"
+    },
+    {
+      "path": "public/images/placeholders/video-smart-home-480.webp",
+      "sizeBytes": 1228,
+      "sha256": "b1f22201ebe54b463715c1f70059752107f0806a47c9aacecc5f88bf1d2f4fdf"
+    },
+    {
+      "path": "public/images/placeholders/video-smart-home-960.webp",
+      "sizeBytes": 1228,
+      "sha256": "b1f22201ebe54b463715c1f70059752107f0806a47c9aacecc5f88bf1d2f4fdf"
+    },
+    {
+      "path": "public/images/placeholders/video-smart-home.png",
+      "sizeBytes": 11150,
+      "sha256": "458d53f09eb0ac68cbd578471b405bc66ffbdaa7b989461f7647473df450b15f"
+    },
+    {
+      "path": "public/images/placeholders/video-switches-480.webp",
+      "sizeBytes": 700,
+      "sha256": "aa99d9edbb8c09ed111f81452d4f01a5e82ebfbf24f8f182f01deb68e035a728"
+    },
+    {
+      "path": "public/images/placeholders/video-switches-960.webp",
+      "sizeBytes": 700,
+      "sha256": "aa99d9edbb8c09ed111f81452d4f01a5e82ebfbf24f8f182f01deb68e035a728"
+    },
+    {
+      "path": "public/images/placeholders/video-switches.png",
+      "sizeBytes": 7112,
+      "sha256": "59e118330acb5177c121c4571b3c3db9b988660b77f8992af6ed695f9166c37a"
+    },
+    {
+      "path": "public/window.svg",
+      "sizeBytes": 386,
+      "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66"
+    },
+    {
+      "path": "scripts/build-verified.sh",
+      "sizeBytes": 661,
+      "sha256": "2ae5329ac860076070c9217a43106a15cb5ecf907a0f7baeb9ef903f76b53c68"
+    },
+    {
+      "path": "scripts/generate-handoff-examples.mjs",
+      "sizeBytes": 8862,
+      "sha256": "f9deb69ec9b68b320c0a5c3fb5274b743584842756ea3285a3566a80710c0929"
+    },
+    {
+      "path": "scripts/install-ci.sh",
+      "sizeBytes": 6326,
+      "sha256": "f63e840679ca885f206d17b7f8285199bb6bcd47ebc360008d04d16b8e54f63c"
+    },
+    {
+      "path": "scripts/package-handoff.py",
+      "sizeBytes": 3543,
+      "sha256": "e39b0be30f38c6a395fab8e8fb966c11860c2aeabbe7c31ea10dbdb89d3c9bdd"
+    },
+    {
+      "path": "scripts/render-handoff-docs.py",
+      "sizeBytes": 5421,
+      "sha256": "632555f07ae118261d233b467fa7f7bc145bf44dfbeaf4599fc76dfcdd85f1ef"
+    },
+    {
+      "path": "scripts/sites-env.sh",
+      "sizeBytes": 1530,
+      "sha256": "df86ebfc27d2f00860036658e933ac0ddd7b5f6879aa5d51218f0863c7e1fb60"
+    },
+    {
+      "path": "tests/calculator-api.test.mjs",
+      "sizeBytes": 4187,
+      "sha256": "6be396880ea33a9abb1a5a33ebada7f76ac1de2bf82c20b8870747d167b7a23d"
+    },
+    {
+      "path": "tests/calculator-defaults.test.mjs",
+      "sizeBytes": 8677,
+      "sha256": "8d6bc13c3af034a2e04cafa24d89a8458fd5186f1a565b16eb28931472017807"
+    },
+    {
+      "path": "tests/project-configuration.test.mjs",
+      "sizeBytes": 7361,
+      "sha256": "cc263d520e2dea9dba64790da30d51637faca23bee3689fbb7a0f52b8c922558"
+    },
+    {
+      "path": "tests/rendered-html.test.mjs",
+      "sizeBytes": 708,
+      "sha256": "5ac783870aaef4eb2d5c2f28329929e0f42555cb73664596ece24e8ed07333d9"
+    },
+    {
+      "path": "tests/site-worker.mjs",
+      "sizeBytes": 1085,
+      "sha256": "01641af27c074dab07c720a228be02121217a73304eb6de2d585f1f206128147"
+    },
+    {
+      "path": "tests/ui-components.test.mjs",
+      "sizeBytes": 2840,
+      "sha256": "08e681a25fe202a00d7d9e790804e4dc115a8a9388bb47a2c2e0211ec810fb02"
+    },
+    {
+      "path": "tsconfig.json",
+      "sizeBytes": 666,
+      "sha256": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.LICENSE.md",
+      "sizeBytes": 1063,
+      "sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f"
+    },
+    {
+      "path": "vendor/shadcn-tailwind-4.13.0.css",
+      "sizeBytes": 16041,
+      "sha256": "bc7d83425702955b4cb67cb14ede9d603f9d912376d57a2d81d661094d2a782a"
+    },
+    {
+      "path": "vite.config.ts",
+      "sizeBytes": 1807,
+      "sha256": "43e5f02f727ca043f08ebf34789f330580a7a0cb90f426c92f4a454d066988fc"
+    },
+    {
+      "path": "worker/index.ts",
+      "sizeBytes": 1731,
+      "sha256": "2ed36d7fa996e946d9d7695c5925e7760246f6bf8fa35c06f1bc515c087dc450"
+    },
+    {
+      "path": "wrangler.local.jsonc",
+      "sizeBytes": 305,
+      "sha256": "7a43c47ba6b7720b46fdb9426396a7315a57117105fe0da63d8a972c254dfecf"
+    }
+  ]
+}

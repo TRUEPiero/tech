@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Технобит: пакет для программиста</title><style>
+* { box-sizing: border-box; }
+html { background: #eef2f6; }
+body { margin: 0; color: #4b5563; font: 16px/1.55 Arial, sans-serif; overflow-wrap: anywhere; }
+main { max-width: 1120px; margin: 32px auto; padding: 52px 58px; background: #fff; border-top: 6px solid #168c9e; }
+.brand { color: #168c9e; font-size: 18px; font-weight: 700; letter-spacing: .1em; margin: 0 0 14px; }
+h1 { color: #17365d; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; margin: 0 0 24px; }
+h2 { color: #1f4e79; font-size: 23px; line-height: 1.25; margin: 36px 0 14px; }
+h3 { color: #168c9e; font-size: 19px; }
+p { margin: 0 0 14px; }
+a { color: #167486; text-underline-offset: 3px; }
+li { margin: 0 0 8px; padding-left: 3px; }
+ul, ol { padding-left: 24px; margin: 16px 0 22px; }
+.table-wrap { max-width: 100%; overflow-x: auto; margin: 20px 0 26px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th { background: #1f4e79; color: white; font-weight: 700; text-align: left; }
+td, th { padding: 12px 13px; border: 1px solid #d5e0ea; vertical-align: top; }
+td:first-child { background: #d9eaf7; color: #17365d; font-weight: 700; }
+tr:nth-child(even) td:not(:first-child) { background: #f4f6f8; }
+code { font-family: Consolas, monospace; font-size: .92em; }
+pre { padding: 20px; color: #17365d; background: #edf4f9; border-left: 3px solid #168c9e; white-space: pre-wrap; }
+footer { border-top: 1px solid #d5e0ea; margin-top: 44px; padding-top: 18px; color: #687782; font-size: 13px; }
+@media (max-width: 600px) { main { margin: 0; padding: 30px 18px; } td, th { padding: 9px; } table { min-width: 620px; } }
+@media print { html { background: white; } body { font-size: 10pt; line-height: 1.3; } main { margin: 0; padding: 0; border: 0; } h1 { font-size: 25pt; } h2 { font-size: 18pt; break-after: avoid; } table { font-size: 8pt; } tr { break-inside: avoid; } th { print-color-adjust: exact; } @page { size: A4; margin: 17mm; } }
+</style></head>
+<body><main><p class="brand">ТЕХНОБИТ</p><h1>Технобит: пакет для программиста</h1>
+<p>Дата: 07.09.2026. Пакет передачи 1.0. Основа - опубликованная версия сайта 9, включая последнее добавление вентиляторов в релейные группы.</p>
+<h2>Задача</h2>
+<p>Перенести полезные блоки сайта и калькулятор в действующий сайт Технобит. Можно использовать компоненты React или перенести их поведение в технологию существующего сайта. Сохранить структуру этажей и комнат, автозаполнение, ручные правки, управление и экспорт JSON.</p>
+<p>Для начала распакуйте ZIP целиком и откройте этот HTML-файл в браузере. Документы доступны в HTML для чтения и Markdown для редактирования. Интернет для чтения документов не требуется.</p>
+<h2>Порядок чтения</h2>
+<div class="table-wrap"><table><thead><tr><th>Файл</th><th>Для чего нужен</th></tr></thead><tbody><tr><td><a href="docs/PROGRAMMER_HANDOFF.html">PROGRAMMER_HANDOFF.html</a></td><td>Архитектура, карта исходников, запуск, база шаблонов, API и порядок переноса.</td></tr><tr><td><a href="docs/ROOM_DEFAULTS.html">ROOM_DEFAULTS.html</a></td><td>Все 30 шаблонов комнат: свет, климат, датчики, шторы и управление. Где менять значения.</td></tr><tr><td><a href="docs/CONFIGURATION_JSON.html">CONFIGURATION_JSON.html</a></td><td>Поля JSON, единицы измерения, контакт и границы будущей интеграции Project Tool.</td></tr><tr><td><a href="docs/CALCULATION_PROPOSAL.html">CALCULATION_PROPOSAL.html</a></td><td>Разбор исходной таблицы, РРЦ и предложения по подбору оборудования. Открытые правила требуют согласования.</td></tr><tr><td><a href="docs/ACCEPTANCE.html">ACCEPTANCE.html</a></td><td>Выполненные проверки и сценарии приемки переноса, включая адаптивность.</td></tr><tr><td><a href="docs/examples/configuration-example.json">examples/configuration-example.json</a></td><td>Пример с двумя этажами, повторяющимися спальнями, управлением и вымышленным контактом.</td></tr><tr><td><a href="docs/examples/configuration-draft.json">examples/configuration-draft.json</a></td><td>Та же конфигурация до подготовки запроса, без контакта.</td></tr><tr><td><a href="docs/examples/room-defaults.json">examples/room-defaults.json</a></td><td>Машиночитаемый набор всех 30 шаблонов.</td></tr></tbody></table></div>
+<p>Исходники лежат в корне архива: app, lib, components, public, db, drizzle, tests, scripts и файлы зависимостей. PACKAGE_MANIFEST.json содержит точную версию исходников и контрольные суммы файлов. Краткий вход в проект - README.md.</p>
+<h2>Что изменилось в калькуляторе</h2>
+<div class="table-wrap"><table><thead><tr><th>Раздел</th><th>Текущее поведение</th></tr></thead><tbody><tr><td>Общее</td><td>Площадь объекта и наличие вентустановки. Производитель и модель не выбираются.</td></tr><tr><td>Свет</td><td>«Свет: релейные группы + умные розетки + вентиляторы», отдельно диммирование, DALI и LED.</td></tr><tr><td>Отопление</td><td>Радиаторы, водяной и электрический теплый пол, фанкойлы по комнатам.</td></tr><tr><td>Датчики</td><td>CO₂ для вентиляции; движение для света; количество мокрых зон для защиты от протечек. В комнате может быть несколько мокрых зон.</td></tr><tr><td>Кондиционеры</td><td>Есть / Нет в каждой комнате, без выбора модели.</td></tr><tr><td>Шторы</td><td>Общий счетчик штор, электрокарнизов, рулонных штор и жалюзи.</td></tr><tr><td>Управление</td><td>Независимый выбор P4/P6/P8, один сценарный выключатель: нет, 4, 6 или 8 клавиш. Под названием комнаты видны текущие количества света, отопления, штор и кондиционеров.</td></tr><tr><td>Типовые комнаты</td><td>Автозаполнение из 30 редактируемых шаблонов. P4 в прихожей и коридоре. Для остальных комнат начальные выключатели зависят от числа групп.</td></tr><tr><td>Итог и JSON</td><td>Количества обновляются сразу. Можно посмотреть и скачать текущую конфигурацию.</td></tr><tr><td>Запрос расчета щита</td><td>Отдельная кнопка, описание состава щита, выбор email / Telegram / WhatsApp и согласие. Подготавливается локальный JSON.</td></tr></tbody></table></div>
+<p>Отдельных разделов выбора шаровых кранов и объединенной вкладки вентиляции с кондиционированием больше нет. Количество датчиков протечки и кранов должен определять будущий алгоритм по согласованным правилам.</p>
+<h2>Граница готовности</h2>
+<p>Интерфейс, шаблоны и JSON реализованы. Автоматический подбор оборудования и итоговая цена еще не подключены. Сейчас estimate.totalRub = null, equipmentSeries = null, items = []. Умножать площадь на цены уровней автоматизации с главной страницы вместо подбора оборудования нельзя.</p>
+<p>Согласовано: использовать РРЦ; Pro при площади дома больше 250 м², Lite при площади меньше 250 м²; для LED брать в среднем два канала на группу. Ровно 250 м², применение порога к квартирам, ряд комплектующих, пропусков в прайсе и правил подбора остаются открытыми. Подробности в CALCULATION_PROPOSAL.</p>
+<p>Bitrix, email, Telegram, WhatsApp и Project Tool не подключены. Главная форма работает в демонстрационном режиме. Видео - заглушки. Подготовка пакета не включает публикацию на боевом сайте или предоставление доступа другим людям.</p>
+<h2>Что сделать первым</h2>
+<ol><li>Запустить исходники по PROGRAMMER_HANDOFF и изучить калькулятор.</li><li>Выделить компоненты и функции, которые будут перенесены в действующий сайт.</li><li>Подключить шаблоны к базе и авторизации действующего сайта. Сохранить проверку ревизии и запрет записи для посетителя.</li><li>Перенести интерфейс и JSON, пройти приемочные сценарии.</li><li>После согласования правил реализовать расчет оборудования с мгновенным обновлением суммы. Отправку и импорт в Project Tool подключать отдельным этапом.</li></ol>
+<p>Прототип: <a href="https://technobit-smart-home.s-korolev.chatgpt.site">Открыть сайт</a>. Размещение приватное, доступ есть у владельца. Архив позволяет изучить код без доступа к этому размещению.</p><footer>Материалы прототипа. 07.09.2026. Расчет оборудования ожидает согласования.</footer></main></body></html>
