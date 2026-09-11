@@ -15,6 +15,10 @@ export const SCENARIO_SWITCH_OPTIONS = [
 export const roomControlsSchema = z.object({
   p4: z.boolean(), p6: z.boolean(), p8: z.boolean(),
   scenarioSwitch: z.enum(["none", "4", "6", "8"]),
+  types: z.optional(z.object({
+    p4: z.string(), p6: z.string(), p8: z.string(),
+    scenarioSwitch: z.string(),
+  }))
 }).strict();
 export type RoomControls = z.infer<typeof roomControlsSchema>;
 

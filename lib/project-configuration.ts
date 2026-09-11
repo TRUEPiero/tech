@@ -7,11 +7,32 @@ export const FLOOR_TYPES = [
   { value: "second", label: "Второй этаж" },
   { value: "third", label: "Третий этаж" },
 ] as const;
-export type FloorType = (typeof FLOOR_TYPES)[number]["value"];
+
+export type NewFloor = {
+  ID: number;
+  UF_CODE: string;
+  UF_TITLE: string;
+};
+
+// Floor codes are administered in the Bitrix highload block, so they are not
+// limited to the original seed values.
+export type FloorType = string;
 export type CalculatorRoom = { id: string; type: string; wetZoneCount: number; airConditioner: boolean; controls: RoomControls };
 export type CalculatorFloor = { id: string; type: FloorType; rooms: CalculatorRoom[] };
-export type CalculatorState = { areaM2: number | null; ventilation: boolean; floors: CalculatorFloor[]; counts: Record<string, number> };
+export type CalculatorSystemDirectory = { code: string; title: string; items: { id: number | string, code: string; title: string, type_id: number | string }[] };
+export type CalculatorState = {
+  areaM2: number | null; ventilation: boolean; floors: CalculatorFloor[]; counts: Record<string, number>;
+  systemDirectories?: CalculatorSystemDirectory[];
+  fieldValues?: Record<string, string | boolean | number>;
+};
 export type ContactChannel = "email" | "telegram" | "whatsapp";
+export type BitrixSystem = {
+  id: number | string;
+  code: string;
+  title: string;
+  sysName: string;
+  typeId: number | string;
+};
 
 const phone = z.string().trim().max(40).transform((value) => value.replace(/[\s()-]/g, ""))
   .refine((value) => /^\+[1-9]\d{7,14}$/.test(value), "Укажите номер с кодом страны, например +7 900 123-45-67.");
@@ -35,6 +56,7 @@ const roomSystemsSchema = z.object({
 });
 
 export function selectedConfiguration(state: CalculatorState) {
+  console.log({state});
   const get = (roomId: string, system: string, key: string) => state.counts[`${roomId}:${system}:${key}`] ?? 0;
   const floors = state.floors.map((floor, floorIndex) => ({
     id: floor.id, type: floor.type,
@@ -55,10 +77,31 @@ export function selectedConfiguration(state: CalculatorState) {
     })),
   }));
   const rooms = floors.flatMap((floor) => floor.rooms);
+  const bitrixSystems: BitrixSystem[] = (state.systemDirectories ?? []).flatMap((directory) =>
+    directory.items.flatMap((item) => {
+      const quantity = rooms.reduce(
+        (total, room) =>
+          total +
+          (state.counts[
+            `${room.id}:${directory.code}:${item.code}`
+          ] ?? 0),
+        0
+      );
+
+      return Array.from({ length: quantity }, () => ({
+        id: item.id,
+        code: item.code,
+        title: item.title,
+        sysName: item.title,
+        typeId: item.type_id,
+      }));
+    })
+  );
   const sum = (read: (room: (typeof rooms)[number]) => number) => rooms.reduce((total, room) => total + read(room), 0);
   return {
     areaM2: state.areaM2,
     objectSystems: { ventilation: { present: state.ventilation } },
+    bitrixSystems,
     floors,
     totals: {
       floors: floors.length, rooms: rooms.length,

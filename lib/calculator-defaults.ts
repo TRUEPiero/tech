@@ -4,6 +4,12 @@ import { recommendedControls, roomControlsSchema } from "./calculator-controls";
 
 export const ROOM_TYPES = SEED_ROOM_SETTINGS.rooms.map((room) => room.roomType);
 
+export type NewRooms = {
+  ID: number;
+  UF_CODE: string;
+  UF_TITLE: string;
+}
+
 export const COUNT_FIELDS = [
   { key: "relay", system: "lighting", item: "relay", label: "Свет: релейные группы + умные розетки + вентиляторы" },
   { key: "dimming", system: "lighting", item: "dimming", label: "Диммирование" },
